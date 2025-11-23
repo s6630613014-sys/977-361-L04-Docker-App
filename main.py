@@ -23,7 +23,10 @@ def read_root():
         return {"error": f"Redis connection failed: {e}", "count": 0}
 
     # 2. ส่งค่าตัวนับใหม่กลับไปยัง Frontend
+
     return {"message": "V2: This response is from the master branch.", "count": count}
+
+    return {"message": "V2: This response is from the feature branch.", "count": count}
 
 read_root()
 
