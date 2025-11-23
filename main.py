@@ -2,7 +2,7 @@ from typing import Optional
 from fastapi import FastAPI
 from redis import Redis
 
-app = FastAPI()
+  app = FastAPI()
 
 # เชื่อมต่อกับ Redis โดยใช้ชื่อเซอร์วิส "redis" เป็น Hostname
 redis_client = Redis(host='redis', port=6379)
