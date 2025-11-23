@@ -25,6 +25,8 @@ def read_root():
     # 2. ส่งค่าตัวนับใหม่กลับไปยัง Frontend
     return {"message": "Counter successfully updated.", "count": count}
 
+current_count_display()
+
 # Endpoint สำหรับ Health Check
 @app.get("/health")
 def health_check():
